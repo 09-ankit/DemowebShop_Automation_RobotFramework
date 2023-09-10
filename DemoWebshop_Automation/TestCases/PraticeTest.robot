@@ -22,23 +22,23 @@ TestPratice_1
 	Mouse Over      xpath://*[text()='Development']
 	Wait Until Element Is Visible    xpath:(//*[text()='Spring'])[1]
 	Click Element    xpath:(//*[text()='Spring'])[1]
-    Wait Until Page Contains Element    xpath://*[text()='Development']
-    Scroll Element Into View    xpath://a[@class="zta-button"]//span[text()='Spring Data R2DBC Pagination']
-    Wait Until Page Contains Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
-    Click Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
-    Wait Until Page Contains Element    xpath://input[@name="author"]/preceding-sibling::label
-    Scroll Element Into View    xpath://input[@name="author"]/preceding-sibling::label
-    Set Focus To Element    xpath://input[@name="author"]/preceding-sibling::label
-    Press Keys  None  TAB
-    Input Text      xpath://input[@name="author"]   Ankit
+    	Wait Until Page Contains Element    xpath://*[text()='Development']
+    	Scroll Element Into View    xpath://a[@class="zta-button"]//span[text()='Spring Data R2DBC Pagination']
+    	Wait Until Page Contains Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
+    	Click Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
+    	Wait Until Page Contains Element    xpath://input[@name="author"]/preceding-sibling::label
+    	Scroll Element Into View    xpath://input[@name="author"]/preceding-sibling::label
+    	Set Focus To Element    xpath://input[@name="author"]/preceding-sibling::label
+    	Press Keys  None  TAB
+   	Input Text      xpath://input[@name="author"]   Ankit
 
 
 Test_WebTables
 	Open Browser        http://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html#google_vignette    chrome
 	Table Column Should Contain     xpath://table[@id="customers"]  2   Maria Anders
-    Table Row Should Contain    xpath://table[@id="customers"]      6       Adobe
-    Table Header Should Contain     xpath://table[@id="customers"]  Country
-    Table Cell Should Contain       xpath://table[@id="customers"]  6   3   Canada
+    	Table Row Should Contain    xpath://table[@id="customers"]      6       Adobe
+    	Table Header Should Contain     xpath://table[@id="customers"]  Country
+    	Table Cell Should Contain       xpath://table[@id="customers"]  6   3   Canada
 
 
 TestPratice_OrangeHRM
@@ -57,9 +57,9 @@ TestPratice_OrangeHRM
             BREAK
         END
 	END
-	Wait Until Page Contains    Vacancy
-	Wait Until Element Is Enabled    xpath:(//i[contains(@class,'checkbox')])[7]
-	Click Element    xpath:(//i[contains(@class,'checkbox')])[7]
+    Wait Until Page Contains    Vacancy
+    Wait Until Element Is Enabled    xpath:(//i[contains(@class,'checkbox')])[7]
+    Click Element    xpath:(//i[contains(@class,'checkbox')])[7]
 
 
     Wait Until Page Contains    Vacancy
@@ -97,15 +97,15 @@ TestPratice_OrangeHRM_DeleteAllRecords
         END
 	END
 
-    Wait Until Page Contains    Candidates
-    Select JobTitle     Chief Technical Officer
-    Select Status    Job Offered
-    Sleep   2
-    Click Element    xpath:(//i[contains(@class,'calendar')])[1]
-    Wait Until Page Contains Element    xpath:(//div[contains(@class,'calendar')])[37]
-    Click Element    xpath:(//div[contains(@class,'calendar')])[37]
-    Wait Until Page Contains    Vacancy
-    Delete All Records
+    	Wait Until Page Contains    Candidates
+    	Select JobTitle     Chief Technical Officer
+    	Select Status    Job Offered
+    	Sleep   2
+    	Click Element    xpath:(//i[contains(@class,'calendar')])[1]
+    	Wait Until Page Contains Element    xpath:(//div[contains(@class,'calendar')])[37]
+    	Click Element    xpath:(//div[contains(@class,'calendar')])[37]
+    	Wait Until Page Contains    Vacancy
+    	Delete All Records
 
 
 
