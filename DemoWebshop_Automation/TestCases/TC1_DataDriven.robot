@@ -35,23 +35,23 @@ TC0_End2End_OrderProcess
 	Do Login    ${Email}    ${Password}
 	Verify_AccountName_OnHomeScreen    ${Email}
 	Select Shop Category    ${Category}
-    Set Filter Option In Books Page  ${OrderBy}    ${ProductSize}   ${ViewMode}
-    Print All Books Available In Store
-    Alternate Way 2 Select Books From Store   ${BookName}
-    Add Product2_Cart
-    Go To ShoppingCart Cart Page
-    Select Product Checkbox
-    Select Shipping Country     ${Country}
-    Agree TermsService
-    Click Checkout Button
-    Verify Email Populated In Billing_Details   ${Email}
-    Enter Billing Details   ${Country}  ${City}   ${PostalCode}   ${Mobile}
-    Continue Button  1
-    Continue Button  2
-    Continue Button  3
-    Continue Button  4
-    Continue Button  5
-    Confirm Order
-    Verify Order Successfully Placed
+    	Set Filter Option In Books Page  ${OrderBy}    ${ProductSize}   ${ViewMode}
+    	Print All Books Available In Store
+    	Alternate Way 2 Select Books From Store   ${BookName}
+    	Add Product2_Cart
+    	Go To ShoppingCart Cart Page
+    	Select Product Checkbox
+   	Select Shipping Country     ${Country}
+    	Agree TermsService
+    	Click Checkout Button
+    	Verify Email Populated In Billing_Details   ${Email}
+    	Enter Billing Details   ${Country}  ${City}   ${PostalCode}   ${Mobile}
+    	Continue Button  1
+    	Continue Button  2
+    	Continue Button  3
+    	Continue Button  4
+    	Continue Button  5
+    	Confirm Order
+    	Verify Order Successfully Placed
 
 
