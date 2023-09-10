@@ -1,0 +1,32 @@
+1)
+For importing a resourse file we have to use "/"
+Example:  C:/Users/HP/PycharmProjects/RobotFramework_2023/Framework/DemoShop_Keywords/Pages/Global_Methods.robot
+
+2)
+Radio Button
+Example name:radio  value:1
+We have to use Select Radio Button  radio 1 (mostly to use name and value attribute)
+
+3)
+If Conditon
+Example:
+If ${Name}='Ankit' Here we have to put even name in '${Name}' quotes
+
+
+4)
+Select value for DropDown Xpath would be  //ul[@class="list"]//li it points to many webelemets
+
+5)
+Click work on name id and xpath
+not on other loactor like value, Option
+
+6)
+You can get webelement text using ${Webelement.text} But xpath should be proper should point to correct node
+
+
+7)
+Git Link for Learning- https://github.com/robotframework/SeleniumLibrary/blob/master/atest/acceptance/keywords/elements.robot
+
+8)
+Sometime When we face stale element or element not clicable
+by changing xpath can help
