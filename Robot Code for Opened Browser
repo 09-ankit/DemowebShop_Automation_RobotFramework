@@ -1,0 +1,22 @@
+Steps to Run Robot file in opened browser
+
+Open browser in debug mode
+Install Rpa library
+And use below code
+
+*** Tasks ***
+Attach to running Chrome Browser and execute Google search
+    Attach Chrome Browser    9987
+    RPA.Browser.Selenium.Go To    https://www.vinsguru.com/selenium-webdriver-automating-hoverable-multilevel-dropdowns/
+	RPA.Browser.Selenium.Mouse Over      xpath://*[text()='Development']
+	RPA.Browser.Selenium.Wait Until Element Is Visible    xpath:(//*[text()='Spring'])[1]
+	RPA.Browser.Selenium.Click Element    xpath:(//*[text()='Spring'])[1]
+    RPA.Browser.Selenium.Wait Until Page Contains Element    xpath://*[text()='Development']
+    RPA.Browser.Selenium.Scroll Element Into View    xpath://a[@class="zta-button"]//span[text()='Spring Data R2DBC Pagination']
+    RPA.Browser.Selenium.Wait Until Page Contains Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
+    RPA.Browser.Selenium.Click Element    xpath://span[text()='Spring Data R2DBC Pagination']/..
+    RPA.Browser.Selenium.Wait Until Page Contains Element    xpath://input[@name="author"]/preceding-sibling::label
+    RPA.Browser.Selenium.Scroll Element Into View    xpath://input[@name="author"]/preceding-sibling::label
+    RPA.Browser.Selenium.Set Focus To Element    xpath://input[@name="author"]/preceding-sibling::label
+    RPA.Browser.Selenium.Press Keys  None  TAB
+    RPA.Browser.Selenium.Input Text      xpath://input[@name="author"]   Ankit
